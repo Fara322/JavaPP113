@@ -18,6 +18,7 @@ public class UserDaoHibernateImpl implements UserDao {
     }
 
     // Создание таблицы
+    @Override
     public void createUsersTable() {
 
         Transaction transaction = null;
@@ -105,7 +106,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public List<User> getAllUsers() {
-        List<User> list = new ArrayList<>();
+        List<User> list = new ArrayList();
         Session session = sessionFactory.openSession();
         Transaction transaction = null;
         try {

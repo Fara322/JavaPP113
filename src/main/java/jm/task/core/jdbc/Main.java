@@ -14,8 +14,8 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
-        UserDaoHibernateImpl userService = new UserDaoHibernateImpl();
+    public static void main(String[] args) throws SQLException {
+        UserService userService = new UserServiceImpl();
         User user_1 = new User("Timur", "TIMATI", (byte) 38);
         User user_2 = new User("Oleg", "LSP", (byte) 32);
         User user_3 = new User("Albert", "KIEVSTONER", (byte) 29);
